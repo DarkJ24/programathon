@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'arialRound';
+  src: url("fonts/arialrounded.ttf");
+}
+body {
+  font-family: 'arialRound';
+}

@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'roboto';
+  src: url("fonts/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: 'HelveticaMedium';
+  src: url("fonts/helvetica-neue-medium.ttf");
+}
+@font-face {
+  font-family: 'HelveticaLight';
+  src: url("fonts/HelveticaNeue-Light.otf");
+}
+@font-face {
+  font-family: 'HelveticaBold';
+  src: url("fonts/helvetica-neue-bold.ttf");
+}
+body {
+  font-family: 'HelveticaLight';
+}
+.topHeader {
+  background-color: #e86850;
+}
+.topHeader background-size 100% 100% {
+  width: 100%;
+}
+.topImg {
+  height: 35px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+#topHeaderText {
+  color: #fff;
+  font-size: 30px;
+  margin-left: 15px;
+  text-align: center;
+}
+#titleSpan {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: block;
+}
+.errorForm {
+  color: #f00;
+}
+#logInButton {
+  font-family: 'HelveticaMedium';
+  background-color: #587498;
+}
+.footerDiv {
+  bottom: 0px;
+  margin-top: 15px;
+  background-color: #e86850;
+  background-size: 100% 100%;
+  height: 60px;
+  width: 100%;
+  padding: 0px;
+  display: table;
+}
+.footerText {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .topImg {
+    margin-left: 15px;
+  }
+}

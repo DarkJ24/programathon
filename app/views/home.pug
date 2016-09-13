@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    link(href="styles/css/bootstrap.css", rel="stylesheet")
+    link(href="styles/css/utils.css", rel="stylesheet")
+    script(src="js/jquery.js")
+    script(src="js/bootstrap.min.js")
+    script(type='text/javascript').
+      if (foo) bar(1 + 5)
+  body
+    h1 Pug - node template engine
+    #container.col
+      if youAreUsingPug
+        p You are amazing
+      else
+        p Get on it!
+      p.
+        Pug is a terse and simple templating language with a
+        strong focus on performance and powerful features.
+      a#logOutBtn.btn.btn-primary.btn-lg.btn-block(href="#") Sign Out
+
+      div#smallModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true")
+            div.modal-dialog.modal-sm
+                div#smallModalContent.modal-content
+                div#smallModalHeader.modal-header
+                    button.close(type="button" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+                    h4#smallModalLabel.modal-title
+                div#smallModalBody.modal-body
+                  div.form-horizontal
+                    div#smallModalText
+                div#smallModalFooter
+
+      div#loadingModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="loadingModal" aria-hidden="true")
+        div.modal-dialog.modal-sm
+          div.spinner
+            div.bounce1
+            div.bounce2
+            div.bounce3
+
+  footer
+
+    script(src="js/home.js")
+    script(type='text/javascript').
+        jQuery(document).ready(function() {
+            homeFunctions.init();
+        });

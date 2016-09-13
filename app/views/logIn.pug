@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+  head
+    title=LogIn
+    link(href="styles/css/bootstrap.css", rel="stylesheet")
+    link(href="styles/css/utils.css", rel="stylesheet")
+    link(href="styles/css/logIn.css", rel="stylesheet")
+    script(src="js/jquery.js")
+    script(src="js/bootstrap.min.js")
+    body
+        div.col-xs-12.topHeader
+            div.col-xs-12.col-sm-offset-1.col-sm-11
+                img.topImg(src="styles/css/images/header_logo.jpg" alt="")
+                span#topHeaderText Programathon
+        form#logInForm.col-xs-12.col-sm-6.col-sm-offset-3.text-center(name="logInForm")
+            div.form-group
+                span#titleSpan Inicia sesión
+            div.form-group
+                input#inputEmail.form-control.input-lg.text-center(type="text" name="email" placeholder="Correo Electrónico")
+            div.form-group
+                input#inputPassword.form-control.input-lg.text-center(type="password" name="password" placeholder="Contraseña")
+            div.form-group
+                a#logInButton.btn.btn-primary.btn-lg.btn-block(href="#") Ingresar
+        div.col-xs-12.footerDiv.text-center
+            span.footerText.
+                ©  Programathon. Todos los derechos reservados.
+
+        div#smallModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true")
+            div.modal-dialog.modal-sm
+                div#smallModalContent.modal-content
+                div#smallModalHeader.modal-header
+                    button.close(type="button" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+                    h4#smallModalLabel.modal-title
+                div#smallModalBody.modal-body
+                  div.form-horizontal
+                    div#smallModalText
+                div#smallModalFooter
+
+        div#loadingModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="loadingModal" aria-hidden="true")
+            div.modal-dialog.modal-sm
+              div.spinner
+                div.bounce1
+                div.bounce2
+                div.bounce3
+
+    footer
+
+    script(src="js/jquery.validate.min.js")
+    script(src="js/dialogsManager.js")
+
+    script(src="js/logIn.js")
+    script(type='text/javascript').
+        jQuery(document).ready(function() {
+            $('.topImg').click(function(e){
+                document.location.href="/";
+            });
+            $(".footerDiv").css('position', 'absolute');
+            functionLogin.init();
+        });
