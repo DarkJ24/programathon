@@ -1,16 +1,18 @@
-# Programathon - Base App (Node.js, Express.js and Sequelize for MySQL)
+# Programathon - Base App (Node.js, Express.js, Pug, and Sequelize for MySQL)
 
-A barebones Node.js app using [Express 4](http://expressjs.com/) and [Sequelize](http://sequelizejs.com/).
+A barebones Node.js app using [Express 4](http://expressjs.com/), [Pug](https://pugjs.org), and [Sequelize](http://sequelizejs.com/).
 
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/) and MySQL installed.
 
+Commands to run the server:
+
 ```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
+$ git clone https://github.com/DarkJ24/programathon.git
 $ cd programathon
 $ npm install
 $ npm start
 ```
 
-Your app should now be running on [localhost:3000](http://localhost:5000/).
+Your app should now be running on [localhost:3000](http://localhost:3000/).
