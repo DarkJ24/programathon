@@ -15,4 +15,10 @@ $ npm install
 $ npm start
 ```
 
+For development using [Stylus](http://stylus-lang.com/) you can use:
+
+```sh
+$ npm run develop
+```
+
 Your app should now be running on [localhost:3000](http://localhost:3000/).
