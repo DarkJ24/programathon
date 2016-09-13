@@ -7,7 +7,7 @@
     "build-css": "stylus public/styles/stylus -o public/styles/css -c",
     "watch-css": "stylus public/styles/stylus -o public/styles/css -w",
     "start": "node app.js",
-    "develop": "npm start && npm run watch-css"
+    "develop": "npm-run-all --parallel start watch-css"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
@@ -27,6 +27,9 @@
     "sequelize": "^3.23.2",
     "sequelize-cli": "^2.4.0",
     "serve-favicon": "^2.3.0"
+  },
+  "devDependencies":{
+    "npm-run-all": "3.0.0"
   },
   "engines": {
     "node": "0.10.x"
